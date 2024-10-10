@@ -6,13 +6,20 @@
   background-size: cover;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 100px 0;
 }
 
 .main .about-us .image {
   background: url(../imgs/img-quem-somos.jpeg);
+  display: flex;
   max-width: 500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,12 +36,13 @@
   gap: 20px;
   text-align: left;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 0 20px;
 }
 
 .main .about-us .text h2 {
   color: #ff6918;
+  font-size: 36px;
   text-transform: uppercase;
 }
 
@@ -78,7 +86,7 @@
 .main .pizza-menu .text p {
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   padding: 0 4px;
 }
 
@@ -177,4 +185,138 @@
   background-color: #43E960;
   height: 102px;
   width: 102px;
+}
+
+.main .container-map {
+  background: linear-gradient(rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)), url(../imgs/main-container-1-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #555555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 4vw;
+  text-align: center;
+}
+
+.main .container-map .map h2 {
+  color: #ff6918;
+  align-items: center;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 12px ;
+}
+
+.main .container-map .map p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main .container-map .map iframe {
+  height: 400px;
+  width: 90vw;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #65656567;
+}
+
+.main .container-map .adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.main .container-map .adress .social-media {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.main .container-map .adress .social-media i {
+  color: #2a2a2a;
+  font-size: 36px;
+  transition: 0.2s ease-in-out;
+}
+
+.main .container-map .adress .social-media a:hover i {
+  color: #ff6918;
+  font-size: 38px;
+}
+
+.main .container-map .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.main .container-map .contact p {
+  color: #2a2a2a;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.main .container-map .contact span {
+  color: #ff762d;
+}
+
+.main .container-map .contact button {
+  background-color: #ff6918;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.main .container-map .contact button .fa-brands {
+  color: #ffffff;
+  font-size: 74px;
+}
+
+.main .container-map .contact button:hover {
+  background-color: #43E960;
+  height: 102px;
+  width: 102px;
+}
+
+@media screen and (min-width: 800px) {
+
+  .main .about-us {
+    background: linear-gradient(rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)), url(../imgs/main-container-1-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 100px 120px;
+  }
+
+  .main .about-us .image {
+    width: 50%;
+  }
+
+  .main .about-us .text {
+    width: 50%;
+  }
 }
