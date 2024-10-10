@@ -1,0 +1,76 @@
+.header {
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(../imgs/banner-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header .topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  gap: 10px;
+  margin-bottom: 240px;
+}
+
+.header .topnav .topnav-logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.header .topnav .topnav-logo:hover {
+  color: #ff6918;
+}
+
+.header .topnav .links {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.header .topnav .links a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.header .topnav .topnav-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header .topnav .topnav-btn .fa-solid {
+  font-size: 24px;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.header .topnav .topnav-btn:hover .fa-solid {
+  color: #ff6918;
+}
+
+
+.header .banner-home {
+  text-align: center;
+  color: #ffffff;
+}
+
+.header .banner-home h1 {
+  font-size: 48px;
+}
+
+.header .banner-home p {
+  font-size: 20px;
+}
