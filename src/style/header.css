@@ -36,13 +36,19 @@
   display: none;
   align-items: center;
   justify-content: space-around;
-  gap: 10px;
+  gap: 20px;
 }
 
 .header .topnav .links a {
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.header .topnav .links a:hover {
+  color: #ff6918;
+  text-decoration: underline;
 }
 
 .header .topnav .topnav-btn {
@@ -68,7 +74,9 @@
 }
 
 .header .banner-home h1 {
-  font-size: 48px;
+  font-size: 3.2rem;
+  line-height: 80px;
+  padding: 0 10px;
 }
 
 .header .banner-home p {

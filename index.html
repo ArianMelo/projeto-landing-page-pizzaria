@@ -12,19 +12,29 @@
   <title>Pizzaria Bom Sabor</title>
 </head>
 <body>
+  <a href="#" class="btn-to-top">
+    <i class="fa-solid fa-circle-arrow-up"></i>
+  </a>
   <header class="header">
     <nav class="topnav">
       <a class="topnav-logo" href="#">
-        BomSabor
+        <i class="fa-solid fa-pizza-slice"></i> BomSabor
       </a>
       <div class="links">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <a href="#about-us">Sobre Nós</a>
+        <a href="#pizza-menu">Cardápio</a>
+        <a href="#container-map">Localização</a>
       </div>
-      <button class="topnav-btn"><i class="fa-solid fa-bars"></i></button>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <div class="overlay-content">
+          <a href="#about-us">Sobre Nós</a>
+          <a href="#pizza-menu">Cardápio</a>
+          <a href="#container-map">Localização</a>
+        </div>
+      </div>
+      <button class="topnav-btn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
     </nav>
     <section class="banner-home">
       <h1>Bom Sabor</h1>
@@ -32,7 +42,7 @@
     </section>
   </header>
   <main class="main">
-    <section class="about-us">
+    <section id="about-us" class="about-us">
       <div class= "image">
       </div>
       <div class="text">
@@ -48,7 +58,7 @@
         </p>
       </div>
     </section>
-    <section class="pizza-menu">
+    <section id="pizza-menu" class="pizza-menu">
       <div class="content text">
         <h2>Cardápio</h2>
         <p>Escolha o sabor da sua pizza</p>
@@ -94,7 +104,7 @@
         <button><i class="fa-brands fa-whatsapp"></i></button>
       </div>
     </section>
-    <section class="container-map">
+    <section id="container-map" class="container-map">
       <div class="map">
         <h2>Conheça nossa localização</h2>
         <p>visite nossa pizzaria, agende agora!</p>
@@ -124,5 +134,7 @@
       <p>2024 &copy Todos os direitos reservados</p>
     </div>
   </footer>
+
+  <script src="src/javascript/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+.btn-to-top {
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.btn-to-top {
+  background: #f1f1f1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 4%;
+  right: 2%;
+  border: 5px solid #2a2a2a;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 1px;
+  z-index: 99;
+}
+
+.btn-to-top .fa-solid {
+  color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  border: none;
+  height: 30px;
+  width: 30px;
+}
+
+.btn-to-top:hover .fa-solid {
+  color: #ff6918;
+}

@@ -1,4 +1,6 @@
 @import url(header.css);
+@import url(btn-to-top.css);
+@import url(navbtn.css);
 @import url(main.css);
 @import url(footer.css);
 
@@ -6,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .col-1 {width: 8,33%};
